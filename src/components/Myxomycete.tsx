@@ -4,20 +4,15 @@ import { useEffect, useRef } from "react";
 import p5 from "p5";
 
 export const Myxomycete = () => {
-  // Reference to the HTML div element to render the p5 sketch
   const sketchRef = useRef<HTMLDivElement>(null);
 
-  // useEffect hook to ensure the p5 sketch only runs in the browser
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Dynamically import the p5 library since it only works in the browser
       const p5 = require("p5");
 
       let molds: Eukaryote[] = [];
-      // const numberOfMolds = 1729; // The Hardy–Ramanujan Number, used as the total count of "molds"
-      const numberOfMolds = 5441; // WBXXXX5441, my RE Hunter, used as the total count of "molds"
+      const numberOfMolds = 5441;
 
-      // The Eukaryote class, representing a single mold
       class Eukaryote {
         x: number;
         y: number;
@@ -33,38 +28,34 @@ export const Myxomycete = () => {
         sensorAngle: number;
         sensorDist: number;
 
-        // Eukaryote class constructor
         constructor(p: p5) {
-          this.x = p.random(p.width); // Random x-coordinate within the canvas
-          this.y = p.random(p.height); // Random y-coordinate within the canvas
-          this.r = 0.5; // Radius of the mold
-          this.heading = p.random(360); // Initial heading direction in degrees
-          this.vx = p.cos(this.heading); // Velocity component in x-direction
-          this.vy = p.sin(this.heading); // Velocity component in y-direction
-          this.rotAngle = 45; // Rotation angle in degrees for turning
-          this.stop = false; // Flag to stop the mold's movement
-          this.rSensorPos = p.createVector(0, 0); // Right sensor position
-          this.lSensorPos = p.createVector(0, 0); // Left sensor position
-          this.fSensorPos = p.createVector(0, 0); // Front sensor position
-          this.sensorAngle = 45; // Angle between the sensors
-          this.sensorDist = 10; // Distance of sensors from the mold's center
+          this.x = p.random(p.width);
+          this.y = p.random(p.height);
+          this.r = 0.5;
+          this.heading = p.random(360);
+          this.vx = p.cos(this.heading);
+          this.vy = p.sin(this.heading);
+          this.rotAngle = 45;
+          this.stop = false;
+          this.rSensorPos = p.createVector(0, 0);
+          this.lSensorPos = p.createVector(0, 0);
+          this.fSensorPos = p.createVector(0, 0);
+          this.sensorAngle = 45;
+          this.sensorDist = 10;
         }
 
-        // Method to update the mold's position and direction
         update(p: p5) {
           if (this.stop) {
-            this.vx = 0; // Stop the mold's movement
+            this.vx = 0;
             this.vy = 0;
           } else {
-            this.vx = p.cos(this.heading); // Update velocity based on current heading
+            this.vx = p.cos(this.heading);
             this.vy = p.sin(this.heading);
           }
 
-          // Update the mold's position, wrapping around the canvas edges
           this.x = (this.x + this.vx + p.width) % p.width;
           this.y = (this.y + this.vy + p.height) % p.height;
 
-          // Update the sensor positions based on the current heading
           this.getSensorPos(
             this.rSensorPos,
             this.heading + this.sensorAngle,
@@ -77,7 +68,6 @@ export const Myxomycete = () => {
           );
           this.getSensorPos(this.fSensorPos, this.heading, p);
 
-          // Determine the pixel color values at the sensor positions
           const d = p.pixelDensity();
           let index =
             4 * (d * p.floor(this.rSensorPos.y)) * (d * p.width) +
@@ -94,30 +84,27 @@ export const Myxomycete = () => {
             4 * (d * p.floor(this.fSensorPos.x));
           let f = p.pixels[index];
 
-          // Logic to adjust the heading based on sensor readings
           if (f > l && f > r) {
-            this.heading += 0; // Move forward
+            this.heading += 0;
           } else if (f < l && f < r) {
             if (p.random(1) < 0.5) {
-              this.heading += this.rotAngle; // Randomly turn right
+              this.heading += this.rotAngle;
             } else {
-              this.heading -= this.rotAngle; // Randomly turn left
+              this.heading -= this.rotAngle;
             }
           } else if (l > r) {
-            this.heading += -this.rotAngle; // Turn left
+            this.heading += -this.rotAngle;
           } else if (r > l) {
-            this.heading += this.rotAngle; // Turn right
+            this.heading += this.rotAngle;
           }
         }
 
-        // Method to display the mold on the canvas
         display(p: p5) {
-          p.noStroke(); // No outline for the mold
-          p.fill(255); // Fill color (white)
-          p.ellipse(this.x, this.y, this.r * 2, this.r * 2); // Draw the mold as a circle (NOTE: circle is a special case of ellipse)
+          p.noStroke();
+          p.fill(255);
+          p.ellipse(this.x, this.y, this.r * 2, this.r * 2);
         }
 
-        // Method to calculate the position of a sensor based on angle and distance
         getSensorPos(sensor: p5.Vector, angle: number, p: p5) {
           sensor.x =
             (this.x + this.sensorDist * p.cos(angle) + p.width) % p.width;
@@ -126,44 +113,62 @@ export const Myxomycete = () => {
         }
       }
 
-      // The p5 sketch
       const sketch = (p: p5) => {
-        // Setup function to initialize the sketch
         p.setup = () => {
-          p.createCanvas(p.windowWidth, p.windowHeight); // Create a canvas covering the window
-          p.angleMode(p.DEGREES); // Set angle mode to degrees
+          p.createCanvas(p.windowWidth, p.windowHeight);
+          p.angleMode(p.DEGREES);
           for (let i = 0; i < numberOfMolds; i++) {
-            molds[i] = new Eukaryote(p); // Create molds
+            molds[i] = new Eukaryote(p);
           }
         };
 
-        // Draw function to render the sketch continuously
         p.draw = () => {
-          p.background(0, 5); // Background color with slight transparency for trails
-          p.loadPixels(); // Load the pixel array for sensor checks
+          p.background(0, 5);
+          p.loadPixels();
 
           for (let i = 0; i < numberOfMolds; i++) {
-            molds[i].update(p); // Update each mold's position and heading
-            molds[i].display(p); // Display each mold
+            molds[i].update(p);
+            molds[i].display(p);
           }
         };
 
-        // Handle window resize events
         p.windowResized = () => {
-          p.resizeCanvas(p.windowWidth, p.windowHeight); // Resize canvas to fit the window
+          p.resizeCanvas(p.windowWidth, p.windowHeight);
         };
       };
 
-      // Create a new p5 instance and attach it to the sketchRef div
       const p5Instance = new p5(sketch, sketchRef.current!);
 
-      // Cleanup function to remove the p5 instance when the component unmounts
       return () => {
         p5Instance.remove();
       };
     }
   }, []);
 
-  // div element to hold the p5 sketch
-  return <div ref={sketchRef} className="fade-in"></div>;
+  return (
+    <div>
+      <div ref={sketchRef} className="fade-in" style={{ position: "relative" }}></div>
+      <div style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        zIndex: 10,
+      }}>
+        <a href="https://ss-notes.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <button style={{
+            padding: "10px 20px",
+            fontSize: "16px",
+            backgroundColor: "#007bff",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}>
+           Just for you
+          </button>
+        </a>
+      </div>
+    </div>
+  );
 };

@@ -112,7 +112,7 @@ export const Audio: FC = () => {
               onClick={handleSanamClick}
               className={sanamAnimation}
             >
-              {/* Built by Sanam */}
+             
               <i> তোমাকেই ভালবাসবো ভেবেছি শত যুদ্ধের শেষে </i>
             </Button>
           )}
@@ -126,7 +126,7 @@ export const Audio: FC = () => {
               className={musicAnimation}
             >
               {/* Music */}
-              <i> পলাতকা প্লাবনের পরী প্রণয়নী </i>
+              <i> কিরে পুচকু শুরু করি? </i>
             </Button>
           )}
           {isVisible && !firstLoopCompleted && (
@@ -157,7 +157,7 @@ export const Audio: FC = () => {
           >
             {" "}
             {/* withlovebokaboka */}
-            &#xE126;&#x0069;&#x0074;&#xE638;&#x0062;&#x006F;&#x006B;&#x0061;&#x0062;&#x006F;&#x006B;&#xE078;{" "}
+            With❤️ from prajak{" "}
           </p>
         </Box>
       </Container>

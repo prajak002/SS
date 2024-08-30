@@ -6,6 +6,7 @@ import { Balloons, Spots } from "@/components";
 import { useRouter } from "next/navigation";
 import { useAudio, useDarkMode } from "@/context";
 import { MEDIA } from "@/constants";
+
 import Image from "next/image";
 
 export const Messages: FC = () => {
@@ -24,7 +25,7 @@ export const Messages: FC = () => {
   useEffect(() => {
     if (textBoxCharsRef.current) {
       const textBoxChars = textBoxCharsRef.current;
-      textBoxChars.innerHTML = `<span> Happy Birthday Rimjhim! </span>`;
+      textBoxChars.innerHTML = `<span> Happy Birthday som! </span>`;
     }
 
     const tl = gsap.timeline({
@@ -255,7 +256,7 @@ export const Messages: FC = () => {
         >
           <div className="one mt-4">
             <h1
-              id="heyRP"
+              id="heySS"
               style={{
                 background:
                   "linear-gradient(to bottom, #ff0000 0%, #ef4444 40%, #000000 100%)",
@@ -264,12 +265,12 @@ export const Messages: FC = () => {
               }}
             >
               {" "}
-              Hey RP!{" "}
+              Hey SS!{" "}
             </h1>
           </div>
           <div className="two mb-12 mt-2">
-            <p className="font-lvs text-5xl" id="rimjhim">
-              &#xE069;imjhi&#xE168;
+            <p className="font-lvs text-5xl" id="som">
+              Puchku;
             </p>
           </div>
           <div className="three">
@@ -288,7 +289,7 @@ export const Messages: FC = () => {
                   style={{ fontSize: "5rem", fontWeight: "300" }}
                 >
                   {" "}
-                  Happy Birthday Rimjhim!{" "}
+                  Happy Birthday Sanju!{" "}
                 </span>
               </p>
               <p className="fake-btn">Send</p>
@@ -299,13 +300,13 @@ export const Messages: FC = () => {
               className={`idea-1 text-red-500 hover:text-black font-rwd ${darkMode ? "gradient-text-long" : ""} `}
               style={{ fontSize: "5rem", fontWeight: "300" }}
             >
-              I so wished to speak to you yesterday at the GB
+             Dont Do Mon kharap
             </p>
             <p
               className={`idea-2 text-red-500 hover:text-black font-rwd ${darkMode ? "gradient-text-long" : ""}`}
               style={{ fontSize: "5rem", fontWeight: "300" }}
             >
-              But then I fell down on the floor and stopped XD
+              Shob kichu valo hobe
             </p>
             <p className="idea-3">
               <span
@@ -313,7 +314,7 @@ export const Messages: FC = () => {
                 style={{ fontSize: "5rem", fontWeight: "300" }}
               >
                 {" "}
-                Actually, I realized, I wanted to do something{" "}
+                Actually, I realized, Its my responsibility{" "}
               </span>
               <br /> <br />
               <strong className="text-red-500"> special</strong>.
@@ -359,11 +360,11 @@ export const Messages: FC = () => {
           </div>
           <div className="six">
             <Image
-              src={MEDIA.RP_SKETCH}
+              src={MEDIA.SANJ_SKETCH}
               alt=""
               className="rp-dp drop-shadow-xl hover:grayscale-[90%]  hover:brightness-125"
-              height={500}
-              width={500}
+              height={300}
+              width={200}
             />
             <Image
               src="/hat.svg"
@@ -377,7 +378,7 @@ export const Messages: FC = () => {
                 <span className="text-red-600"> Happy 21st Birthday! </span>
               </h3>
               <h5 className="text-red-500 hover:text-black">
-                <strong> May you always put on this pretty smile :) </strong>
+                <strong> May you always put on this pretty smile :") </strong>
               </h5>
             </div>
           </div>
@@ -395,7 +396,7 @@ export const Messages: FC = () => {
             >
               <strong>
                 {" "}
-                I hope things turn good between you and me some day{" "}
+                I hope things turn memorable between you and me some day{" "}
               </strong>
             </p>
             <p
@@ -431,7 +432,7 @@ export const Messages: FC = () => {
               transition: "opacity 3s ease-in-out",
             }}
           >
-            &#xE126;&#x0069;&#x0074;&#xE638;&#x0062;&#x006F;&#x006B;&#x0061;&#x0062;&#x006F;&#x006B;&#xE078;
+           with ❤️ from Prajak;
           </p>
         </div>
       </div>

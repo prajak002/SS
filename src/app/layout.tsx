@@ -11,7 +11,7 @@ import { Aura } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HBD • Rimjhim",
+  title: "HBD • som",
   description:
     "Borne out of my technical and intellectual dexterity, this website servers as a memoir of my love, wait, hope, despair, anger and apathy. তুমি ক্রোধের আগুনে জমে থাকা ব্যথা, আমার শেষ বিকেলের ধোঁকা। কোনো রোদেলা দুপুরে তোমায় ফিরে পাবো বলে, অর্থহীন খোঁজা। with ❤️ for love by sanam",
   generator: "Next.js",
@@ -37,21 +37,21 @@ export const metadata: Metadata = {
   publisher: "Manas Pratim Biswas",
 
   openGraph: {
-    title: "HBD • Rimjhim",
+    title: "HBD • som",
     description: "with ❤️ for love by sanam",
-    url: "https://rimjhim.manaspratimbiswas.com",
-    siteName: "Rimjhim",
+    url: "https://som.manaspratimbiswas.com",
+    siteName: "som",
     images: [
       {
-        url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/rimjhim/opengraph-image.jpg",
+        url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/som/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/rimjhim/opengraph-image.jpg",
+        url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/som/opengraph-image.jpg",
         width: 1800,
         height: 1600,
-        alt: "Rimjhim",
+        alt: "som",
       },
     ],
     locale: "en_US",
@@ -60,12 +60,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Rimjhim",
+    title: "som",
     description: "with ❤️ for love by sanam",
     creator: "@sanam2405",
     images: {
-      url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/rimjhim/opengraph-image.jpg",
-      alt: "Rimjhim",
+      url: "https://raw.githubusercontent.com/sanam2405/sanam2405/main/assets/images/som/opengraph-image.jpg",
+      alt: "som",
     },
   },
 

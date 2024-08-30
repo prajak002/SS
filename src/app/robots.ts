@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://rimjhim.manaspratimbiswas.com/sitemap.xml",
+    sitemap: "https://som.manaspratimbiswas.com/sitemap.xml",
   };
 }
