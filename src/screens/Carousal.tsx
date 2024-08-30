@@ -71,7 +71,7 @@ export const Carousal: FC = () => {
     <div className="flex justify-center items-center min-h-screen p-4 bg-black">
       {showMessage && (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black p-4 rounded shadow-lg">
-          <p>পেজটা খুলার আগে "/Bokaboka" লিখে নে main URL এর পাশে, তারপর রিফ্রেশ করিস।</p>
+          <p>পেজটা খুলার আগে &quot;/Bokaboka&quot; লিখে নে main URL এর পাশে, তারপর রিফ্রেশ করিস।</p>
         </div>
       )}
       <Card className="w-full max-w-2xl h-auto flex flex-col bg-black relative">
