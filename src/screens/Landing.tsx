@@ -30,7 +30,7 @@ export const Landing: FC = () => {
 
       <div className={!isTransitioning ? "animate-fade-in" : ""}>
         {!isTransitioning && (
-          <Leaf numberOfLeaves={10} leafPath="/thelastleaf.png">
+          <Leaf numberOfLeaves={21} leafPath="/thelastleaf.png">
             <Audio />
           </Leaf>
         )}
