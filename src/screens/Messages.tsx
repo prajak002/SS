@@ -363,8 +363,8 @@ export const Messages: FC = () => {
               src={MEDIA.SANJ_SKETCH}
               alt=""
               className="rp-dp drop-shadow-xl hover:grayscale-[90%]  hover:brightness-125"
-              height={300}
-              width={200}
+              height={600}
+              width={500}
             />
             <Image
               src="/hat.svg"
@@ -375,7 +375,7 @@ export const Messages: FC = () => {
             />
             <div className="wish">
               <h3 className="wish-hbd">
-                <span className="text-red-600"> Happy 21st Birthday! </span>
+                <span className="text-red-600"> Happy 20th Birthday! </span>
               </h3>
               <h5 className="text-red-500 hover:text-black">
                 <strong> May you always put on this pretty smile  </strong>
