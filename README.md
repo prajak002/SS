@@ -277,4 +277,4 @@ For starting a developmental server
 
 ## _with_ ♥️ _for love by sanam_
 
-- [Manas Pratim Biswas](https://www.linkedin.com/in/manas-pratim-biswas)
+- [Prajak Sen](https://www.linkedin.com/in/prajak-sen)
