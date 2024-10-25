@@ -1,247 +1,196 @@
-# _জানি বেঁকে গেছে নদী, তবুও তো নিরবধি, <br> মিছিলে-মিছিলে আমি খুঁজেছি তোমায়।_
+To create a `README.md` file for this project, you can copy the content below into a new file named `README.md` in your project directory.
 
-_[Take Me Home](https://ss-murex-beta.vercel.app/)_
+---
 
-## Slime Mold Evolution Simulation
+```markdown
+# Slime Mold Evolution Simulation
 
-The [_algorithm_](/src/components/Myxomycete.tsx) used for the [_simulation of mold behavior_](https://som.sanam.live/ilu) is inspired by the research paper titled "[_Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks_](/public/artl.2010.16.2.pdf)", which explores the pattern formation and evolution in Physarum transport networks.
+> _"Jaani bẽke gẽche nôdi, tôbũ tô nirôbodhi, misheele-misheelẽ aami khũjechi tômaai."_
+
+### [Take Me Home](https://ss-murex-beta.vercel.app/)
+
+## Project Overview
+
+This project simulates the evolution and behavior of slime molds inspired by **Physarum Transport Networks**. By following principles of growth and adaptability, the simulation models how slime molds navigate, form patterns, and evolve under specific conditions. The underlying algorithm is inspired by the paper **"[Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks](https://som.sanam.live/ilu)"** which explores how these fascinating organisms create optimized transport networks.
+
+### Algorithm Details
+
+The [_algorithm_](/src/components/Myxomycete.tsx) powering this simulation uses particle-based logic to simulate the adaptive behavior of slime molds. Slime mold particles interact to create natural patterns resembling those of slime molds in nature.
+
+## Getting Started
+
+To set up this project locally, follow these steps:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (latest LTS version recommended)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/ss-murex-beta.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd ss-murex-beta
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+
+- **Build the Project**:
+   ```bash
+   npm run build
+   ```
+
+- **Start the Project**:
+   ```bash
+   npm start
+   ```
+
+- **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+Once the server is running, you can access the simulation at `http://localhost:3000`.
 
 ## Music Credits
 
+The simulation is accompanied by a collection of tracks that deepen the immersive experience. Here’s the curated tracklist, each song carefully selected to add emotion to the simulation.
+
+### Tracklist
+
 <details>
-  <summary>1. <i>পলাতকা প্লাবনের পরী প্রণয়নী </i> </summary>
+  <summary>1. <i>পলাতকা প্লাবনের পরী প্রণয়নী</i> </summary>
   <br/>
   
-    পলাতকা প্লাবনের পরী প্রণয়নী, 
-    কিসের তালে নেচে উঠেছে ধমনী?
     পলাতকা প্লাবনের পরী প্রণয়নী, 
     কিসের তালে নেচে উঠেছে ধমনী?
     জানি বেঁকে গেছে নদী, তবুও তো নিরবধি, 
     মিছিলে-মিছিলে আমি খুঁজেছি তোমায়...
 
-    কবিতায়, খালি পায়ে, সব খেলা ফেলে,
-    ছুটেছি খুব, দেব ডুব, আমি ডানা মেলে,
-    হায় কবিতায়, খালি পায়ে, সব খেলা ফেলে,
-    ছুটেছি খুব, দেব ডুব, আমি ডানা মেলে,
-    সবুজে-সাদাতে-লালে, কি সায়রে কি ডোবালে?
-    শব্দের ডুবুরিরা চিনেছে তোমায়...
-
-    অসহায়, মৃতপ্রায়, আহা কোনোমতে,
-    তুমি আলোকিত, সজ্জিত, ছায়াপথে,
-    হায়, অসহায়, মৃতপ্রায়, আহা কোনোমতে,
-    তুমি আলোকিত, সজ্জিত, ছায়াপথে,
-    গোপনে-গোপনে যতো শব্দেরা অবিরত,
-    তোমাকেই ডাকে, তুমি শোনোনা বোধহয়...
+- **Lyrics**: _Orchon Bhattacharya_
+- **Composition**: _Wolfgang Amadeus Mozart (Symphony No. 25 in G minor)_
+- **Vocals**: _Sudhaborshy Chakraborty_ and _Chandosika_
 
 </details>
 
-- Lyrics: _Orchon Bhattacharya_
-- Composition: _Wolfgang Amadeus Mozart_ (Symphony No. 25 in G minor)
-- Vocals: _Sudhaborshy Chakraborty_ and _Chandosika_
-
 <details>
-  <summary>2. <i> শুধু তোমাকেই ভালোবেসে </i> </summary>
+  <summary>2. <i>শুধু তোমাকেই ভালোবেসে</i> </summary>
   <br/>
   
     শুধু তোমাকেই ভালোবেসে
-    শুকনো নদীতে ডিঙি ভাসিয়েছি মোহনার কাছে এসে
-    শুধু তোমাকেই ভালোবেসে
-    দু'মুঠো আদর ভিক্ষে চেয়েছি দরিদ্র এই দেশে
-    শুধু তোমাকেই ভালোবেসে
-    ঝড়ের সামনে দাঁড়িয়েছি একা ছেঁড়া পতাকার বেশে
-    তোমাকেই ভালোবেসে
-    তোমাকেই ভালবাসবো ভেবেছি শত যুদ্ধের শেষে
-    এই পাঁজরভরা ভালোবাসা দু'হাত ভরে নাও
-    এই আধো আলো আধো ছায়া দু'চোখ ভরে নাও
-    এই আমায় কিছু নাই বা দিলে নিজের করে নাও
+    শুকনো নদীতে ডিঙি ভাসিয়েছি মোহনার কাছে এসে...
+
+- **Lyrics & Composition**: _Nilanjan Ghoshal_
+- **Vocals & Guitar**: _Sudhaborshy Chakraborty_
+
 </details>
 
-- Lyrics & Composition: _Nilanjan Ghoshal_
-- Vocals & Guitar: _Sudhaborshy Chakraborty_
-
 <details>
-  <summary>3. <i> Rojaa </i> </summary>
+  <summary>3. <i>Rojaa</i> </summary>
   <br/>
-  Roja jaaneman tu hi mera dil
-  Tujh bin tarse naina
-Dilse na jaati hai yaadein tumhaari
-Kaise tum bin jeena
-Aankhon mein tu hai
-Aansu mein tu hai
-Aankhein band kar loon
-To mann mein bhi tu hai
-Khwaabon mein tu
-Saanson mein tu
-Roja
-
     
+    Roja jaaneman tu hi mera dil
+    Tujh bin tarse naina
+    Dilse na jaati hai yaadein tumhaari
+    Kaise tum bin jeena...
+
+- **Composition**: _A.R. Rahman_
+
 </details>
 
-- Lyrics: _Chandril Bhattacharya_
-- Composition: _Chandrabindoo_ (Juju)
-
 <details>
-  <summary>4. <i> ধাঁধার থেকেও জটিল তুমি </i> </summary>
+  <summary>4. <i>ধাঁধার থেকেও জটিল তুমি</i> </summary>
   <br/>
 
     ধাঁধার থেকেও জটিল তুমি
     খিদের থেকেও স্পষ্ট।
     কাজের মধ্যে অকাজ খালি
-    মনের মধ্যে কষ্ট।
+    মনের মধ্যে কষ্ট...
 
-    স্বপ্ন হয়ে যখন তখন আঁকড়ে আমায় ধর
-    তাইতো বলি আমায় বরং
-    ঘেন্না কর ঘেন্না কর।
-
-    গুনগানের হাজার বুলি, শুধুই সময় নষ্ট
-    আঁকছো ছবি সমস্ত দিন, রঙ সবই অস্পষ্ট।
-    সুখের থেকেও হাজার গুনে দুঃখ অনেক ভালো
-    তাইতো বলি আমায় বরং
-    ঘেন্না কর ঘেন্না কর।
-
-    আজ চালাক আমি কাল বোকা
-    মহৎ প্রেমিক ন্যাকা ন্যাকা,
-    আজ চালাক আমি কাল বোকা
-    মহৎ প্রেমিক ন্যাকা ন্যাকা
-    আমার আসল চেহারা কি চিনতে তুমি পারো?
-    চিনতে যদি পেরেই থাকো
-    ঘেন্না কর ঘেন্না কর।
-
-    ধাঁধার থেকেও জটিল তুমি
-    খিদের থেকেও স্পষ্ট।
-    কাজের মধ্যে অকাজ খালি
-    মনের মধ্যে কষ্ট।
-    স্বপ্ন হয়ে যখন তখন আঁকড়ে আমায় ধর
-    তাইতো বলি আমায় বরং
-    ঘেন্না কর ঘেন্না কর।
+- **Lyrics**: _Joyjit Lahiri_
+- **Composition**: _Subrata Ghosh_
+- **Band**: _Gorer Math_
 
 </details>
 
-- Lyrics: _Joyjit Lahiri_
-- Composition: _Subrata Ghosh_
-- Band: _Gorer Math_
-- First released as part of _Mohiner Ghoraguli Sompadito_ (Compilation) Albums
-- Rendition:
-
-  - Dotara - _Shayan Sinha_
-  - Vocals & Ukulele - _Sayatya_
-
-- **NOTE** that this is not a song by Mohiner Ghoraguli but released as part of Mohiner Ghoraguli Sompadito Albums
-
 <details>
-  <summary>5. <i> প্রস্তাব </i> </summary>
+  <summary>5. <i>প্রস্তাব</i> </summary>
   <br/>
 
     গুনে গুনে দেখি অবেলার স্বপ্নটায়
     আঁকা ছিলো কত শত কবিতায়,
-    স্বপ্নের সেই কবিতার ছন্দতে
-    মিশে ছিলো তার হাসিমাখা ছবিটা
-    যা আঁকা ছিলো অদ্ভুত রঙ তুলি
-    যা জমা থাকে আমার মনে মাঝে।
-    বর হয়ে আমি চড়ছি ঘোড়ায়,
-    আড়ালে তুমি লুকিয়ে আছো বৌ সাজে।
+    স্বপ্নের সেই কবিতার ছন্দতে...
 
-    আমার এই স্বপ্ন কি শুধু,
-    স্বপ্ন হয়ে হাসাবে আমায়,
-    তেমন সাহস নেই আমার
-    তোমাকে কিভাবে প্রস্তাব জানাই?
-
-    সেই কল্পনায় আঁকা আল্পনায়
-    তোমায় নিয়ে ভাবা শত জল্পনায়।
-    তুমি আছো বলে বেঁচে আছে স্বপ্নটা,
-    তোমায় নিয়ে লেখা এই কবিতা।
-    সেই কবিতার ছন্দটা তুমি,
-    মিশে থাকা প্রতি অক্ষরে আমি।
-    জানা নেই কি হতে পারে শেষটা,
-    নিশ্চুপ কবি বসে লিখছে কবিতায়।
-
-    আমার এই স্বপ্ন কি শুধু,
-    স্বপ্ন হয়ে হাসাবে আমায়,
-    তেমন সাহস নেই আমার
-    তোমাকে কিভাবে প্রস্তাব জানাই?
+- **Lyrics**: _Moontasir Rakib_
+- **Composition**: _Odd Signature_
 
 </details>
 
-- Lyrics: _Moontasir Rakib_
-- Composition: _Odd Signature_
-
 <details>
-  <summary>6. <i> সে যে বসে আছে একা একা </i> </summary>
+  <summary>6. <i>সে যে বসে আছে একা একা</i> </summary>
   <br/>
 
     সে যে বসে আছে একা একা
     রঙিন স্বপ্ন তার বুনতে,
     সে যে চেয়ে আছে ভরা চোখে
-    জানালার ফাঁকে মেঘ ধরতে।
-    সে যে বসে আছে একা একা
-    রঙিন স্বপ্ন তার বুনতে,
-    সে যে চেয়ে আছে ভরা চোখে
-    জানালার ফাঁকে মেঘ ধরতে।
+    জানালার ফাঁকে মেঘ ধরতে...
 
-    তার গুনগুন মনের গান বাতাসে উড়ে
-    কান পাতো মনে পাবে শুনতে,
-    তার রঙের তুলির নাচে মেঘেরা ছুটে
-    চোখ মেল যদি পারো বুঝতে।
-    তার গুনগুন মনের গান বাতাসে উড়ে
-    কান পাতো মনে পাবে শুনতে,
-    তার রঙের তুলির নাচে মেঘেরা ছুটে
-    চোখ মেল যদি পারো বুঝতে।।
-
-    সে যে বসে আছে একা একা
-    তার স্বপ্নের কারখানা চলছে,
-    আর বুড়ো বুড়ো মেঘেদের দল
-    বৃষ্টি নামার তাল গুনছে।
-    সে যে বসে আছে একা একা
-    তার স্বপ্নের কারখানা চলছে,
-    আর বুড়ো বুড়ো মেঘেদের দল
-    বৃষ্টি নামার তাল গুনছে।
-
-    সেই গুন গুন মনের গান বৃষ্টি নামায়
-    টপটপ ফোটা পড়ে অনেকক্ষণ,
-    সেই বৃষ্টি ভেজা মনে ডাক দিয়েছে
-    ভেজা কাক হয়ে থাক আমার মন।
-    সেই গুন গুন মনের গান বৃষ্টি নামায়
-    টপটপ ফোটা পড়ে অনেকক্ষণ,
-    সেই বৃষ্টি ভেজা মনে ডাক দিয়েছে
-    ভেজা কাক হয়ে থাক আমার মন।
-
-    সে যে বসে আছে, সে যে বসে আছে...
+- **Lyrics & Composition**: _Shayan Chowdhury Arnob_
+- **Rendition**: _Arijit Singh_
 
 </details>
 
-- Lyrics: _Shayan Chowdhury Arnob_
-- Composition: _Shayan Chowdhury Arnob_ (Chaina Bhabish)
-- Rendition: _Arijit Singh_
+<details>
+  <summary>7. <i>Agar Tum Saath Ho</i> </summary>
+  <br/>
 
-## Setting up locally
+    Agar tum saath ho
+    Beet jayenge pal jo ho saath tum agar
+    Kyun ki tum hi ho, Tum hi ho meri aashiqui...
 
-- Clone the ss repository
+- **Lyrics**: _Irshad Kamil_
+- **Composition**: _A.R. Rahman_
 
+</details>
 
-- Install the dependencies
+<details>
+  <summary>8. <i>Taare Zameen Par</i> </summary>
+  <br/>
 
-```bash
-    npm install
+    Kholo kholo darwaze, Par yeh kaun mujhe aaye
+    Khuli khuli si hai zindagi, Behti hawa sa tha woh...
+
+- **Lyrics**: _Prasoon Joshi_
+- **Composition**: _Shankar-Ehsaan-Loy_
+
+</details>
+
+<details>
+  <summary>9. <i>Yeh Haseen Wadiyan</i> </summary>
+  <br/>
+
+    Yeh haseen wadiyan, Yeh khula aasmaan
+    Aa gaye hum kahan, Aye mere saajna...
+
+- **Lyrics**: _Mehboob_
+- **Composition**: _A.R. Rahman_
+
+</details>
+
+---
+
+## _With_ ♥️ _for love by Prajak_
+
+- **Creator**: [Prajak Sen](https://www.linkedin.com/in/prajak-sen)
+
+This project combines art, emotion, and the fascinating behavior of slime molds to create an engaging experience. We hope you enjoy exploring this simulation as much as we enjoyed building it. Let us know if you have any feedback or ideas!
 ```
 
-- Build the project
-
-```bash
-   npm run build
-```
-
-- Run the project
-
-```bash
-    npm start
-```
-
-For starting a developmental server
-
-```bash
-   npm run dev
-```
-
-## _with_ ♥️ _for love by prajak_
-
-- [Prajak Sen](https://www.linkedin.com/in/prajak-sen)
