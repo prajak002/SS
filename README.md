@@ -1,4 +1,4 @@
-To create a `README.md` file for this project, you can copy the content below into a new file named `README.md` in your project directory.
+
 
 ---
 
