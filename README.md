@@ -1,6 +1,6 @@
 # _জানি বেঁকে গেছে নদী, তবুও তো নিরবধি, <br> মিছিলে-মিছিলে আমি খুঁজেছি তোমায়।_
 
-_[Take Me Home](https://som.sanam.live/)_
+_[Take Me Home](https://ss-murex-beta.vercel.app/)_
 
 ## Slime Mold Evolution Simulation
 
@@ -244,12 +244,8 @@ The [_algorithm_](/src/components/Myxomycete.tsx) used for the [_simulation of m
 
 ## Setting up locally
 
-- Clone the rp repository
+- Clone the ss repository
 
-```bash
-    git clone git@github.com:sanam2405/rp.git
-    cd rp
-```
 
 - Install the dependencies
 
@@ -275,6 +271,6 @@ For starting a developmental server
    npm run dev
 ```
 
-## _with_ ♥️ _for love by sanam_
+## _with_ ♥️ _for love by prajak_
 
 - [Prajak Sen](https://www.linkedin.com/in/prajak-sen)
