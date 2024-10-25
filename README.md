@@ -60,50 +60,21 @@ The [_algorithm_](/src/components/Myxomycete.tsx) used for the [_simulation of m
 - Vocals & Guitar: _Sudhaborshy Chakraborty_
 
 <details>
-  <summary>3. <i> গীতগোবিন্দ </i> </summary>
+  <summary>3. <i> Rojaa </i> </summary>
   <br/>
+  Roja jaaneman tu hi mera dil
+  Tujh bin tarse naina
+Dilse na jaati hai yaadein tumhaari
+Kaise tum bin jeena
+Aankhon mein tu hai
+Aansu mein tu hai
+Aankhein band kar loon
+To mann mein bhi tu hai
+Khwaabon mein tu
+Saanson mein tu
+Roja
 
-    তোমাকে দেখাবো Niagara
-    তোমাকে শেখাবো Viagra
-    তোমাকে করবো আদর-আত্তি जत्नम्
-    ওগো त्वमसि मम जीवनम्
-    त्वमसि मम भूषणम्
-    त्वमसि मम भवजलधिरत्नम्
-
-    তোমাকে শোনাবো জয় গোঁসাই
-    তোমার বাবাকে মেসোমশাই
-    পুচ্ছে বেঁধেছি গুচ্ছ রজনীগন্ধা
-    আজি এ পরানে রবির কর
-    কেমনে জাগালো dinosaur
-    হাউমাউ বেগে দেখি पिया मुख चंदा
-
-    দারুণ কাটলে ছোট্ট চুল
-    বোতাম আঁটতে করছো ভুল
-    সরু সংসারে কেমনে ফুটিলে उदारम्
-    स्मर गरल खण्डनम्
-    मम शिरसि मण्डनम्
-    देहि पद पल्लवम् उदारम्
-
-    তোমার জন্যে চিন্তা হয়
-    তুমি তো Preity Zinta নয়
-    টুপুর টাপুর Kareena Kapoor চেষ্টা
-    তবু তুমি আমার CPM,
-    তুমি আমার ATM,
-    তুমিই আমার series প্রেমের শেষটা
-
-    খাচ্ছি, কিন্তু গিলছি কই
-    পাখার রাজ্যে চুল শুকোই
-    টাকের মধ্যে পেরজাপতি ফড়-ফড়িং
-    সোনা বড্ড বেশি ঝলমলাও
-    Lift-এ ওঠো একতলায়
-    Beetles ছাড়া অন্য পোকা খুব boring
-
-    তুমি শ্যামলা বঙ্গদেশ, তুমি ইঙ্গো SMS
-    তুমি অং-বং ভবজলধি নুলিয়া আ...
-    বধূ চোক্ষে এসো, অন্ধ হোক
-    কক্ষে এসো নিন্দে হোক
-    বক্ষে এসো গীতগোবিন্দ ভুলিয়া
-
+    
 </details>
 
 - Lyrics: _Chandril Bhattacharya_
